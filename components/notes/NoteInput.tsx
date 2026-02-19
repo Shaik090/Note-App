@@ -19,15 +19,15 @@ export default function NoteInput({ onAdd }: NoteInputProps) {
   };
 
   return (
-    <div className="p-4 w-full border rounded-lg space-y-2">
+    <div className="p-4 w-full space-y-2">
       <input
-        className="w-full border p-2 rounded"
+        className="w-full p-2"
         placeholder="Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       ></input>
       <textarea
-        className="w-full h-96 border text-black p-2 rounded"
+        className=" w-full h-96 p-2"
         placeholder="Write something..."
         value={content}
         onChange={(e) => setContent(e.target.value)}
